@@ -27,7 +27,7 @@ async function getWeather(e, city) {
     
         const url = `http://api.weatherapi.com/v1/current.json?key=${API}&q=${city}`;
     
-        const response = await fetch(url);
+        const response = await fetch(url, {mode: "cors"});
         const json = await response.json();
 
         data.condition = json.current.condition;
