@@ -98,7 +98,7 @@ function handleError() {
 }
 
 
-getWeather(null, 'London');
+await getWeather(null, 'London');
 city.value = 'London';
 
 // Input resize snipped
